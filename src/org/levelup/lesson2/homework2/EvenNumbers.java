@@ -1,6 +1,5 @@
 package org.levelup.lesson2.homework2;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class EvenNumbers {
