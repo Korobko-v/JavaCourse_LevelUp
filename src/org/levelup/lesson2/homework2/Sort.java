@@ -12,12 +12,15 @@ public class Sort {
         for (int i = 0; i < nums.length - 1; i++) {
             for (int j = nums.length - 1; j > i; j--) {
                 if (nums[j - 1] > nums[j]) {
-                    int tmp = a;
-                    a = b;
-                    b = tmp;
+                    int tmp = nums[j - 1];
+                    nums[j - 1] = nums[j];
+                    nums[j] = tmp;
                 }
             }
         }
+        a = nums[0];
+        b = nums[1];
+        c = nums[2];
 
         System.out.println("Возрастающая последовательность чисел: " + a + "," + b + "," + c);
     }
