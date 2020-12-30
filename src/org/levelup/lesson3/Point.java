@@ -42,8 +42,15 @@ public class Point {
         System.out.println(pointName + "(" + this.x + ", " + this.y + ")");
     }
 
-    void flip(int x1, int y1) {
-        this.x = -x1;
-        this.y = -y1;
+    Point flip() {
+        this.x = -x;
+        this.y = -y;
+        return new Point(x,y);
+    }
+
+    double calculateDistance(Point second) {
+        double k1 = Math.pow(x - second.x, 2);
+        double k2 = Math.pow(y - second.y, 2);
+        return (Math.sqrt(k1 + k2));
     }
 }

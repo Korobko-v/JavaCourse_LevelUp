@@ -42,9 +42,6 @@ public class App {
         System.out.println(arrayUtil.max(new int[] {15, 28, 8 , 55, 84}));
         System.out.println(arrayUtil.min(new int[] {15, 28, 8 , 55, 84}));
 
-        pointA.flip(pointA.x, pointA.y);
-        System.out.println("Flip");
-        System.out.println("A(" + pointA.x + ", " + pointA.y + ")");
 
         int[] arr = new int[] { 2 , 18, 29, 5, 732, 200};
         ArraySorting arraySorting = new ArraySorting(arr);
@@ -53,6 +50,11 @@ public class App {
         for (int a : arr) {
             System.out.println(a);
         }
+        Point toFlip = new Point(2,-5);
+        System.out.println("The point is (" + toFlip.x + "," + toFlip.y + ")");
+        toFlip.flip();
+        System.out.println("Flipped point is (" + toFlip.x + "," + toFlip.y + ")");
+
     }
 }
 
