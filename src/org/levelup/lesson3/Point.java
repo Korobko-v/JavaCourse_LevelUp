@@ -47,6 +47,9 @@ public class Point {
         this.y = -y;
         return new Point(x,y);
     }
+    void print() {
+        System.out.println(("The point is (" + x + "," + y + ")"));
+    }
 
     double calculateDistance(Point second) {
         double k1 = Math.pow(x - second.x, 2);

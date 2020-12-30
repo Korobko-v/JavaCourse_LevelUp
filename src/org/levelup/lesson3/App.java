@@ -51,9 +51,9 @@ public class App {
             System.out.println(a);
         }
         Point toFlip = new Point(2,-5);
-        System.out.println("The point is (" + toFlip.x + "," + toFlip.y + ")");
+        toFlip.print();
         toFlip.flip();
-        System.out.println("Flipped point is (" + toFlip.x + "," + toFlip.y + ")");
+        toFlip.print();
 
     }
 }
