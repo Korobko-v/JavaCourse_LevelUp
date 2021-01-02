@@ -2,10 +2,11 @@ package org.levelup.lesson4.homework;
 
 import org.levelup.lesson2.Array;
 
-public class MergeSort {
+public class MergeSort extends Sorting {
     int[] array;
 
-    int[] sort(int[]array) {
+    @Override
+    public int[] sort(int[] array) {
 
         if (array.length <=1) {
         return array;
