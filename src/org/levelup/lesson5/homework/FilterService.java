@@ -6,14 +6,14 @@ import java.util.List;
 public class FilterService {
     Object[] filterArray(Object[] object, BaseFilter baseFilter) {
         Shop[] shops = (Shop[]) object;
-        List<Shop> list = new ArrayList<>();
-        for (Shop shop: shops) {
+        List<Object> list = new ArrayList<>();
+        for (Shop shop : shops) {
                 if (baseFilter.filter(shop)) {
                     list.add(shop);
                 }
             }
 
-        Shop[]newArr = new Shop[list.size()];
+        Object[]newArr = new Shop[list.size()];
         for (int i = 0; i < list.size(); i++) {
             newArr[i] = list.get(i);
         }
