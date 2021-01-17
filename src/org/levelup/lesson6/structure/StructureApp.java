@@ -22,6 +22,7 @@ public class StructureApp {
         structure.removeByIndex(1);
         System.out.println(structure.size);
         structure.trim();
+        System.out.println(structure.getByIndex(5));
 
     }
 }

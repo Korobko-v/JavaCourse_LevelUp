@@ -8,9 +8,7 @@ public abstract class Structure {
     public abstract void removeByIndex(int index);
     public abstract void removeByValue(int value);
 
-    public int getByIndex(int index) {
-        return 0;
-    }
+    public abstract int getByIndex(int index);
     public abstract void trim();
 
     public int getSize() {
