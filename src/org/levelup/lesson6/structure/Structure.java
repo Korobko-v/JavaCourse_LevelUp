@@ -1,21 +1,10 @@
 package org.levelup.lesson6.structure;
 
-public abstract class Structure {
-    protected int size;
+public interface Structure <E> {
+    //int size = 50;
+    void add(E value);
 
-    public abstract void addLast(int value);
+    void removeByValue(E value);
 
-    public abstract void removeByIndex(int index);
-    public abstract void removeByValue(int value);
-
-    public abstract int getByIndex(int index);
-    public abstract void trim();
-
-    public int getSize() {
-        return size;
-    }
-
-    public boolean isEmpty() {
-        return (size == 0);
-    }
+    boolean contains(E value);
 }

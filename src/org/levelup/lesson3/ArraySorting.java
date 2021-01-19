@@ -1,13 +1,16 @@
 package org.levelup.lesson3;
 
 public class ArraySorting {
+
     int[] array;
 
     ArraySorting(int[]array) {
+
         this.array = array;
     }
 
     int[] bubbleSort(int[] array) {
+
         for (int out = array.length - 1; out >= 1; out--) {
             for (int in = 0; in < out; in++) {
                     if (array[in] > array[in + 1]) {

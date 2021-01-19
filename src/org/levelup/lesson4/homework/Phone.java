@@ -43,13 +43,16 @@ public class Phone {
 
     }
     void printPhone() {
+
         System.out.println("Number: " + number + "; Model: " + model + "; Weight: " + weight + ".");
     }
 
     void receiveCall(String name) {
+
         System.out.println("Звонит " + name);
     }
     void receiveCall(String name, String number) {
+
         System.out.println("Звонит " + name + " (" + number + ").");
     }
 

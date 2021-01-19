@@ -1,8 +1,6 @@
 package org.levelup.lesson6.structure;
 
-import java.util.List;
-
-public class DynamicArray extends Structure {
+public class DynamicArray extends AbstractStructure {
     private int[] elementData;
 
     public DynamicArray(int initialCapacity) {
