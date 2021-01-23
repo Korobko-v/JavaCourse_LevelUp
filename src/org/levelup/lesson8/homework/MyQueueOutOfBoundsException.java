@@ -1,10 +1,10 @@
 package org.levelup.lesson8.homework;
 
-public class MyQueueOutOfBoundException extends Exception {
+public class MyQueueOutOfBoundsException extends Exception {
 
     private GraphicErrorCode graphicErrorCode;
 
-    public MyQueueOutOfBoundException(GraphicErrorCode graphicErrorCode) {
+    public MyQueueOutOfBoundsException(GraphicErrorCode graphicErrorCode) {
 
         this.graphicErrorCode = graphicErrorCode;
     }

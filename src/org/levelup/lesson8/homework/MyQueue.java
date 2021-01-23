@@ -16,7 +16,7 @@ public class MyQueue<E> extends OneWayList<E> {
     }
 
     @Override
-    public void add(E value) throws MyQueueOutOfBoundException {
+    public void add(E value) throws MyQueueOutOfBoundsException {
 
         Element<E> el = new Element<>(value);
         if (head == null) {
@@ -33,18 +33,17 @@ public class MyQueue<E> extends OneWayList<E> {
             curr.setNext(el);
         }
         if (count > size) {
-            throw new MyQueueOutOfBoundException(GraphicErrorCode.FULL);
+            throw new MyQueueOutOfBoundsException(GraphicErrorCode.FULL);
         }
     }
 
-    public Element<E> take() throws MyQueueOutOfBoundException {
+    public Element<E> take() throws MyQueueOutOfBoundsException {
         if (head == null) {
-            throw new MyQueueOutOfBoundException(GraphicErrorCode.NULL);
+            throw new MyQueueOutOfBoundsException(GraphicErrorCode.NULL);
 
         }
         Element<E> el = head;
         head = head.getNext();
         return el;
     }
-
 }
