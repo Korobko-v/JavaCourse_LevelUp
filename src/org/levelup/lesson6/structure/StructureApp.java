@@ -1,12 +1,14 @@
 package org.levelup.lesson6.structure;
 
+import org.levelup.lesson8.homework.MyQueueOutOfBoundException;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
 public class StructureApp {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws MyQueueOutOfBoundException {
 //        AbstractStructure structure = new DynamicArray(5);
 //        structure.addLast(5);
 //        structure.addLast(2);

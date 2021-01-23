@@ -1,10 +1,12 @@
 package org.levelup.lesson6.structure;
 
+import org.levelup.lesson8.homework.MyQueueOutOfBoundException;
+
 public class OneWayList <E> implements Structure<E> {
     private Element<E> head;
 
     @Override
-    public void add(E value) {
+    public void add(E value) throws MyQueueOutOfBoundException {
         Element<E> el = new Element<>(value);
         if (head == null) {
             //означает, что список пустой
