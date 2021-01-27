@@ -10,7 +10,7 @@ import java.util.Map;
 import java.util.Set;
 
 public class CollectionsApp {
-    public static void main(String[] args) throws MyQueueOutOfBoundException {
+    public static void main(String[] args) throws MyQueueOutOfBoundsException {
         Set<Object> set1 = new HashSet<>();
         Set<Object> set2 = new HashSet<>();
         set1.add(5);
@@ -40,7 +40,7 @@ public class CollectionsApp {
         MapsApp ma = new MapsApp();
         System.out.println(ma.swap(map));
 
-        MyQueue<String> queue = new MyQueue<>(2);
+        MyQueue<String> queue = new MyQueue<>(3);
         queue.add("Вова");
         queue.add("Дима");
         queue.add("Андрей");
